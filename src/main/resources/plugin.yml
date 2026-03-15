@@ -1,0 +1,27 @@
+name: ParticleFX
+version: '${version}'
+main: xyz.MrYArg1cH.ParticleFX.ParticleFX
+api-version: '1.21'
+description: Customizable particle animations for many player actions.
+authors: [MrYArg1cH]
+commands:
+  particlefx:
+    description: Manage particle presets, bindings and reload plugin config.
+    usage: /particlefx help
+    aliases: [pfx]
+permissions:
+  particlefx.reload:
+    description: Allows reloading plugin config.
+    default: op
+  particlefx.customize:
+    description: Allows managing personal particle presets and bindings.
+    default: true
+  particlefx.effect.jump:
+    description: Allows the default jump effect.
+    default: true
+  particlefx.effect.death:
+    description: Allows the default death effect.
+    default: true
+  particlefx.effect.respawn:
+    description: Allows the default respawn effect.
+    default: true

@@ -1,0 +1,291 @@
+messages:
+  prefix: "&8[&bParticleFX&8] &r"
+  usage: "&7Use &b/particlefx help &7for commands."
+  no-permission: "&cYou do not have permission."
+  player-only: "&cOnly players can use this command."
+  unknown-subcommand: "&cUnknown subcommand."
+  reload-success: "&aConfiguration reloaded."
+
+settings:
+  reload-permission: "particlefx.reload"
+  customize-permission: "particlefx.customize"
+  disabled-worlds: []
+
+effects:
+  presets:
+    jump_wave:
+      enabled: true
+      permission: "particlefx.effect.jump"
+      animation: "RING_WAVE"
+      duration-ticks: 12
+      frame-interval-ticks: 1
+      points: 32
+      arms: 2
+      radius: 0.85
+      radius-growth-per-tick: 0.05
+      height: 0.8
+      y-offset: 0.1
+      vertical-wave-amplitude: 0.12
+      spin-speed: 0.55
+      cooldown-ticks: 4
+      start-delay-ticks: 0
+      sound:
+        enabled: true
+        type: "ENTITY_BREEZE_JUMP"
+        volume: 0.45
+        pitch: 1.7
+      particles:
+        - particle: DUST
+          color: "85,220,255"
+          size: 1.35
+          count: 1
+        - particle: END_ROD
+          count: 1
+        - particle: ELECTRIC_SPARK
+          count: 1
+
+    shadow_requiem:
+      enabled: true
+      permission: "particlefx.effect.death"
+      animation: "DOUBLE_HELIX"
+      duration-ticks: 30
+      frame-interval-ticks: 1
+      points: 28
+      arms: 3
+      radius: 0.95
+      radius-growth-per-tick: 0.03
+      height: 2.25
+      y-offset: 0.15
+      vertical-wave-amplitude: 0.05
+      spin-speed: 0.38
+      cooldown-ticks: 0
+      start-delay-ticks: 0
+      sound:
+        enabled: true
+        type: "ENTITY_WITHER_DEATH"
+        volume: 0.55
+        pitch: 1.15
+      particles:
+        - particle: SOUL_FIRE_FLAME
+          count: 1
+        - particle: DUST_COLOR_TRANSITION
+          from-color: "255,70,70"
+          to-color: "70,70,70"
+          size: 1.25
+          count: 1
+        - particle: ASH
+          count: 1
+        - particle: SMOKE
+          count: 1
+
+    rebirth:
+      enabled: true
+      permission: "particlefx.effect.respawn"
+      animation: "PHOENIX_BURST"
+      duration-ticks: 30
+      frame-interval-ticks: 1
+      points: 42
+      arms: 2
+      radius: 1.3
+      radius-growth-per-tick: 0.015
+      height: 2.1
+      y-offset: 0.1
+      vertical-wave-amplitude: 0.12
+      spin-speed: 0.26
+      cooldown-ticks: 0
+      start-delay-ticks: 6
+      sound:
+        enabled: true
+        type: "ITEM_TOTEM_USE"
+        volume: 0.65
+        pitch: 1.05
+      particles:
+        - particle: TOTEM_OF_UNDYING
+          count: 1
+        - particle: DUST_COLOR_TRANSITION
+          from-color: "255,255,180"
+          to-color: "80,255,190"
+          size: 1.45
+          count: 1
+        - particle: END_ROD
+          count: 1
+        - particle: FIREWORK
+          count: 1
+
+    welcome_orbit:
+      enabled: true
+      permission: ""
+      animation: "ORBITAL"
+      duration-ticks: 20
+      frame-interval-ticks: 1
+      points: 36
+      arms: 3
+      radius: 1.15
+      radius-growth-per-tick: 0.02
+      height: 1.8
+      y-offset: 0.1
+      vertical-wave-amplitude: 0.1
+      spin-speed: 0.42
+      cooldown-ticks: 0
+      start-delay-ticks: 4
+      sound:
+        enabled: true
+        type: "ENTITY_PLAYER_LEVELUP"
+        volume: 0.4
+        pitch: 1.25
+      particles:
+        - particle: END_ROD
+          count: 1
+        - particle: DUST
+          color: "255,240,180"
+          size: 1.1
+          count: 1
+
+    wind_tunnel:
+      enabled: true
+      permission: ""
+      animation: "TORNADO"
+      duration-ticks: 16
+      frame-interval-ticks: 1
+      points: 28
+      arms: 3
+      radius: 0.8
+      radius-growth-per-tick: 0.04
+      height: 1.9
+      y-offset: 0.0
+      vertical-wave-amplitude: 0.05
+      spin-speed: 0.55
+      cooldown-ticks: 10
+      start-delay-ticks: 0
+      particles:
+        - particle: CLOUD
+          count: 1
+        - particle: SWEEP_ATTACK
+          count: 1
+
+    teleport_rift:
+      enabled: true
+      permission: ""
+      animation: "CELESTIAL_SPHERE"
+      duration-ticks: 18
+      frame-interval-ticks: 1
+      points: 40
+      arms: 4
+      radius: 1.1
+      radius-growth-per-tick: 0.02
+      height: 2.0
+      y-offset: 0.1
+      vertical-wave-amplitude: 0.08
+      spin-speed: 0.45
+      cooldown-ticks: 8
+      start-delay-ticks: 0
+      sound:
+        enabled: true
+        type: "ENTITY_ENDERMAN_TELEPORT"
+        volume: 0.5
+        pitch: 1.0
+      particles:
+        - particle: PORTAL
+          count: 2
+        - particle: DUST_COLOR_TRANSITION
+          from-color: "100,180,255"
+          to-color: "200,80,255"
+          size: 1.1
+          count: 1
+
+    forge_sparks:
+      enabled: true
+      permission: ""
+      animation: "STARBURST"
+      duration-ticks: 10
+      frame-interval-ticks: 1
+      points: 30
+      arms: 5
+      radius: 0.9
+      radius-growth-per-tick: 0.05
+      height: 0.7
+      y-offset: 0.05
+      vertical-wave-amplitude: 0.08
+      spin-speed: 0.25
+      cooldown-ticks: 2
+      start-delay-ticks: 0
+      particles:
+        - particle: FIREWORK
+          count: 1
+        - particle: ELECTRIC_SPARK
+          count: 1
+        - particle: DUST
+          color: "255,170,60"
+          size: 1.0
+          count: 1
+
+    level_pillar:
+      enabled: true
+      permission: ""
+      animation: "PILLAR_PULSE"
+      duration-ticks: 22
+      frame-interval-ticks: 1
+      points: 24
+      arms: 2
+      radius: 0.65
+      radius-growth-per-tick: 0.025
+      height: 2.4
+      y-offset: 0.0
+      vertical-wave-amplitude: 0.0
+      spin-speed: 0.18
+      cooldown-ticks: 0
+      start-delay-ticks: 0
+      sound:
+        enabled: true
+        type: "ENTITY_PLAYER_LEVELUP"
+        volume: 0.5
+        pitch: 1.35
+      particles:
+        - particle: WAX_ON
+          count: 1
+        - particle: DUST
+          color: "120,255,170"
+          size: 1.1
+          count: 1
+
+    archer_trail:
+      enabled: true
+      permission: ""
+      animation: "ORBITAL"
+      duration-ticks: 12
+      frame-interval-ticks: 1
+      points: 24
+      arms: 2
+      radius: 0.55
+      radius-growth-per-tick: 0.02
+      height: 1.0
+      y-offset: 1.1
+      vertical-wave-amplitude: 0.0
+      spin-speed: 0.65
+      cooldown-ticks: 4
+      start-delay-ticks: 0
+      particles:
+        - particle: CRIT
+          count: 1
+        - particle: ENCHANT
+          count: 2
+
+  bindings:
+    jump:
+      - jump_wave
+    death:
+      - shadow_requiem
+    respawn:
+      - rebirth
+    join:
+      - welcome_orbit
+    sprint-start:
+      - wind_tunnel
+    teleport:
+      - teleport_rift
+    block-break:
+      - forge_sparks
+    level-up:
+      - level_pillar
+    shoot-bow:
+      - archer_trail
